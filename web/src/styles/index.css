@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+:root {
+  /* Theme inspired by provided menu image (deep red + gold). */
+  --zi-bg: 90 14 18;
+  --zi-surface: 118 18 22;
+  --zi-text: 255 246 228;
+  --zi-muted: 255 222 172;
+  --zi-line: 215 161 86;
+  --zi-accent: 241 200 104;
+
+  --zi-radius: 20px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  color: rgb(var(--zi-text));
+  background:
+    radial-gradient(1200px 700px at 40% -10%, rgba(var(--zi-accent) / 0.18), transparent 60%),
+    radial-gradient(1000px 650px at 85% 15%, rgba(var(--zi-line) / 0.14), transparent 55%),
+    radial-gradient(1000px 650px at 10% 80%, rgba(var(--zi-line) / 0.10), transparent 55%),
+    radial-gradient(800px 500px at 70% 105%, rgba(var(--zi-accent) / 0.10), transparent 60%),
+    rgb(var(--zi-bg));
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, 'Apple Color Emoji',
+    'Segoe UI Emoji';
+}
+
+.zi-serif {
+  font-family: 'Times New Roman', Times, Georgia, Cambria, serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: rgba(var(--zi-accent) / 0.18);
+}
+
